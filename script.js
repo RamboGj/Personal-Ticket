@@ -15,15 +15,27 @@ function changeSocialMediaLinks() {
             li.children[0].href = 'https://api.whatsapp.com/send?phone=5547996371853' 
             
         } else {
-            isLinkedin? li.children[0].href = 'https://www.linkedin.com/in/rambog/'
+            isLinkedin? li.children[0].href = `https://${social}.com/in/${socialMedias[social]}/`
             :
             li.children[0].href = `https://${social}.com/${socialMedias[social]}`
-  
-         alert(li.children[0].href)
         }
     }
 }
 
 changeSocialMediaLinks()
 
-   
+function getGithubProfileApi() {
+    const apiUrl = `https://api.github.com/users/${socialMedias.github}`
+
+    fetch(apiUrl)
+    .then(response => response.json())
+    .then(data => {
+        userName.textContent = data.name
+        userDescription.textContent = data.bio
+        userGit.href = data.html_url
+        userPhoto.src = data.avatar_url
+        userLogin.textContent = data.login
+    })
+}
+
+getGithubProfileApi()

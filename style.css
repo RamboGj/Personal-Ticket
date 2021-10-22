@@ -16,6 +16,7 @@ html, body {
 body {
     display: grid;
     place-items: center;
+    background: linear-gradient(to right, rgb(223, 22, 172), orange);
 }
 
 main {
@@ -95,12 +96,16 @@ ul {
 li:hover {
     filter: saturate(3);
     transition-duration: 0.5s;
+}
 
+li img:hover {
+    transition: transform 0.5s;
+    transform: translateX(0) scale(1.2);  
 }
 
 .github:hover {
     font-size: 1rem;
-    color: rgb(61, 60, 61);
-    filter: brightness(3);
-    transition-duration: 0.5s;
+    color: #A879AE;
+    transition: transform 0.5s;
+    transform: translateX(0) scale(1.2);
 }
