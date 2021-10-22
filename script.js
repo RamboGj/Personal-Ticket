@@ -1,5 +1,5 @@
 const socialMedias = {
-    whatsapp: 'send?phone=5547996371853',
+     whatsapp: 'send?phone=5547996371853',
      github: "RamboGj",
      linkedin: "rambog",
      twitter: "ramboojp",
@@ -12,7 +12,7 @@ function changeSocialMediaLinks() {
         const isLinkedin = social == 'linkedin'
         
         if (social == 'whatsapp') {
-            li.children[0].href = 'https://api.whatsapp.com/send?phone=5547996371853' 
+            li.children[0].href = `https://api.whatsapp.com/${socialMedias[social]}`
             
         } else {
             isLinkedin? li.children[0].href = `https://${social}.com/in/${socialMedias[social]}/`
