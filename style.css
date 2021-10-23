@@ -13,6 +13,18 @@ html, body {
     -webkit-font-smoothing: antialiased;
 }
 
+@media (max-width: 1080px) {
+    html {
+        font-size: 83.5%;
+    }
+}
+
+@media (min-width: 720px) {
+    html {
+        font-size: 93.75%
+    }
+}
+
 body {
     display: grid;
     place-items: center;
@@ -20,9 +32,10 @@ body {
 }
 
 main {
-    background: url(images/background.svg);
-    width: 375px;
-    height: 812px;
+    background: url(images/background.svg) no-repeat center/cover;
+    width: 100vw;
+    min-height: 812px;
+    height: 100vh;
     text-align: center;
     
     color: var(--gray);
