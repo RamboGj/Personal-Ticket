@@ -19,7 +19,7 @@ html, body {
     } 
 
     main {
-        background: url(images/background.svg) no-repeat center/cover;
+        background: url(/images/desktopbackground.svg) no-repeat center/cover;
     }
 
     #userPhoto {
@@ -38,16 +38,19 @@ html, body {
     html {
         font-size: 83.5%;
     }  
+    main {
+        background: url(images/background.svg) no-repeat center/cover;
+    }
 }
 
 body {
     display: grid;
     place-items: center;
-    background: linear-gradient(to right, rgb(223, 22, 172), orange);
+    background: #121214;
 }
 
 main {
-    background: url(images/background.svg) no-repeat center/cover;
+    background: url(images/desktopbackground.svg) no-repeat center/cover;
     width: 100vw;
     min-height: 812px;
     height: 100vh;
