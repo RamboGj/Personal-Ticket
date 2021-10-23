@@ -15,14 +15,31 @@ html, body {
 
 @media (max-width: 1080px) {
     html {
-        font-size: 83.5%;
+        font-size: 93.75%;
+        background: url(images/desktopbackground.svg) no-repeat center/cover;
+        width: 100vw;
+        min-height: 812px;
+        height: 100vh;
+        z-index: 1;
     }
+
+    #userPhoto {
+        margin-top: 2rem;
+    }
+
+    .avatar span {
+        position: absolute;
+        top: 5px;
+        z-index: 1;
+    }
+
 }
 
-@media (min-width: 720px) {
+@media (max-width: 720px) {
     html {
-        font-size: 93.75%
-    }
+        font-size: 83.5%;
+        background: url(images/background.svg) no-repeat center/cover;
+    }  
 }
 
 body {
@@ -32,11 +49,12 @@ body {
 }
 
 main {
-    background: url(images/background.svg) no-repeat center/cover;
+    background: url(images/desktopbackground.svg) no-repeat center/cover;
     width: 100vw;
     min-height: 812px;
     height: 100vh;
     text-align: center;
+    
     
     color: var(--gray);
 }
@@ -122,3 +140,4 @@ li img:hover {
     transition: transform 0.5s;
     transform: translateX(0) scale(1.2);
 }
+
