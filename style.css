@@ -16,11 +16,10 @@ html, body {
 @media (max-width: 1080px) {
     html {
         font-size: 93.75%;
-        background: url(images/desktopbackground.svg) no-repeat center/cover;
-        width: 100vw;
-        min-height: 812px;
-        height: 100vh;
-        z-index: 1;
+    } 
+
+    main {
+        background: url(images/background.svg) no-repeat center/cover;
     }
 
     #userPhoto {
@@ -38,7 +37,6 @@ html, body {
 @media (max-width: 720px) {
     html {
         font-size: 83.5%;
-        background: url(images/background.svg) no-repeat center/cover;
     }  
 }
 
@@ -49,7 +47,7 @@ body {
 }
 
 main {
-    background: url(images/desktopbackground.svg) no-repeat center/cover;
+    background: url(images/background.svg) no-repeat center/cover;
     width: 100vw;
     min-height: 812px;
     height: 100vh;
